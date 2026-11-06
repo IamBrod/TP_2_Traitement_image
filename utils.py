@@ -44,7 +44,7 @@ def get_dataloaders(
     pin_memory: bool = True,
     train_subset: float | None = None,
     data_aug: bool = False,
-) -> tuple[DataLoader, DataLoader]:
+) -> tuple[DataLoader, DataLoader, DataLoader]:
     """Crée les dataloaders pour l'entraînement, la validation et le test.
 
     Args:
